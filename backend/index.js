@@ -7,7 +7,7 @@ const PORT = 9000;
 server.use(cors());
 
 server.get("/", (request, response) => {
-  response.json("backend ajillaj baina");
+  response.json("batorgil: backend ajillaj baina");
 });
 
 server.listen(PORT, () => {
