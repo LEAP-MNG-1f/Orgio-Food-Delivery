@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { Headers } from "./_components/headers/Headers";
+import { Footers } from "./_components/footers/Footers";
 
 export default function Home() {
   const fetchData = async () => {
@@ -18,8 +19,9 @@ export default function Home() {
     fetchData();
   }, []);
   return (
-    <div>
+    <div className="w-full h-auto flex-col justify-center items-center">
       <Headers />
+      <Footers />
     </div>
   );
 }

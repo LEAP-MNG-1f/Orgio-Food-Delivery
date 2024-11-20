@@ -9,11 +9,11 @@ export const Headers = () => {
       <div className="container flex justify-center items-center gap-8">
         <PineconeLogo />
         <div className="flex gap-2">
-          <div className="px-4 py-2 text-[#18BA51] font-base font-bold">
+          <button className="px-4 py-2 text-[#18BA51] font-base font-bold">
             НҮҮР
-          </div>
-          <div className="px-4 py-2 font-base font-bold">ХООЛНЫ ЦЭС</div>
-          <div className="px-4 py-2 font-base font-bold">ХҮРГЭЛТИЙН БҮС</div>
+          </button>
+          <button className="px-4 py-2 font-base font-bold">ХООЛНЫ ЦЭС</button>
+          <button className="px-4 py-2 font-base font-bold">ХҮРГЭЛТИЙН БҮС</button>
         </div>
       </div>
       <div className="flex justify-center items-center w-full h-auto gap-2">
@@ -27,11 +27,11 @@ export const Headers = () => {
         </div>
         <div className="flex w-auto h-auto justify-center items-center gap-2 px-4 py-2">
           <BasketIcon />
-          <p className="text-sm font-bold">Сагс</p>
+          <button className="text-sm font-bold">Сагс</button>
         </div>
         <div className="flex w-auto h-auto justify-center items-center gap-2 px-4 py-2">
           <LoginIcon />
-          <p className="text-sm font-bold">Нэвтрэх</p>
+          <button className="text-sm font-bold">Нэвтрэх</button>
         </div>
       </div>
     </div>
