@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import { Headers } from "./_components/headers/Headers";
 
 export default function Home() {
   const fetchData = async () => {
@@ -16,5 +17,9 @@ export default function Home() {
   useEffect(() => {
     fetchData();
   }, []);
-  return <div>hello world</div>;
+  return (
+    <div>
+      <Headers />
+    </div>
+  );
 }
