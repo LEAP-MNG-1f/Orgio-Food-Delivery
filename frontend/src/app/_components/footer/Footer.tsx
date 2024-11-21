@@ -1,12 +1,20 @@
-import { PineconeLogoWhite } from "../svg/PineconeLogoWhite";
-import TwitterIcon from '@mui/icons-material/Twitter';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import Link from "next/link";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  PineconeLogoWhite,
+  TwitterIcon,
+} from "../../../../public/Icons/Icons";
 
-export const Footers = () => {
+export const Footer = () => {
   return (
-    <div className="bg-[#18BA51] w-full h-auto flex justify-center items-center">
-      <div className="container flex flex-col justify-center items-center px-28 py-32 gap-10">
+    <div
+      style={{
+        backgroundImage: `url(${"./Icons/BackgroundVector.svg"})`,
+      }}
+      className="bg-[#18BA51] w-full h-auto flex justify-center items-center"
+    >
+      <div className="container max-w-[1440px] m-auto flex flex-col justify-center items-center px-[120px] py-32 gap-10">
         <div className="flex justify-center items-center gap-2">
           <PineconeLogoWhite />
           <div className="text-xl font-bold text-white">Food Delivery</div>
@@ -21,20 +29,26 @@ export const Footers = () => {
           <button className="text-white font-semibold underline decoration-solid">
             Хоолны цэс
           </button>
-          <button className="text-white font-semibold underline decoration-solid">
+          <Link
+            href={"/terms-of-sevice"}
+            className="text-white font-semibold underline decoration-solid"
+          >
             Үйлчилгээний нөхцөл
-          </button>
+          </Link>
           <button className="text-white font-semibold underline decoration-solid">
             Хүргэлтийн бүс
           </button>
-          <button className="text-white font-semibold underline decoration-solid">
+          <Link
+            href={"/privacy-policy"}
+            className="text-white font-semibold underline decoration-solid"
+          >
             Нууцлалын бодлого
-          </button>
+          </Link>
         </div>
         <div className="flex justify-center items-center gap-[18px]">
-            <FacebookIcon/>
-            <InstagramIcon/>
-            <TwitterIcon/>
+          <FacebookIcon />
+          <InstagramIcon />
+          <TwitterIcon />
         </div>
         <div className="w-full h-auto flex border-white border"></div>
         <div className="w-auto h-auto flex flex-col gap-2">
@@ -42,7 +56,6 @@ export const Footers = () => {
             © 2024 Pinecone Foods LLC
           </p>
           <p className="flex justify-center items-center text-white text-base font-normal">
-            {" "}
             Зохиогчийн эрх хуулиар хамгаалагдсан.
           </p>
         </div>

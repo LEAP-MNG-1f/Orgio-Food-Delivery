@@ -1,8 +1,7 @@
 "use client";
 import { useEffect } from "react";
-import { Headers } from "./_components/headers/Headers";
-import { Footers } from "./_components/footers/Footers";
-
+import Hero from "./_components/hero/Page";
+import SaleMeals from "./_components/salemeals/SaleMeals";
 export default function Home() {
   const fetchData = async () => {
     try {
@@ -19,9 +18,11 @@ export default function Home() {
     fetchData();
   }, []);
   return (
-    <div className="w-full h-auto flex-col justify-center items-center">
-      <Headers />
-      <Footers />
-    </div>
+    <main>
+      <Hero />
+      <SaleMeals />
+      {/* <TermsOfService />
+      <PrivacyPolicy /> */}
+    </main>
   );
 }
