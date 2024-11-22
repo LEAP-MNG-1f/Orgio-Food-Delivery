@@ -20,9 +20,9 @@ export const Footer = () => {
           <div className="text-xl font-bold text-white">Food Delivery</div>
         </div>
         <div className="w-full h-auto flex justify-between items-center">
-          <button className="text-white font-semibold underline decoration-solid">
+          <Link href={"/"} className="text-white font-semibold underline decoration-solid">
             Нүүр
-          </button>
+          </Link>
           <button className="text-white font-semibold underline decoration-solid">
             Холбоо барих
           </button>
@@ -35,9 +35,12 @@ export const Footer = () => {
           >
             Үйлчилгээний нөхцөл
           </Link>
-          <button className="text-white font-semibold underline decoration-solid">
+          <Link
+            href={"/delivery-area"}
+            className="text-white font-semibold underline decoration-solid"
+          >
             Хүргэлтийн бүс
-          </button>
+          </Link>
           <Link
             href={"/privacy-policy"}
             className="text-white font-semibold underline decoration-solid"

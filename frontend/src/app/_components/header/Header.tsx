@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   BasketIcon,
   LoginIcon,
@@ -12,9 +13,9 @@ export const Header = () => {
         <div className="w-full h-auto flex justify-start items-center gap-8 py-2">
           <PineconeLogoBlack />
           <div className="flex gap-2">
-            <button className="px-4 py-2 text-[#18BA51] font-base font-bold">
+            <Link href={"/"} className="px-4 py-2 font-base font-bold">
               НҮҮР
-            </button>
+            </Link>
             <button className="px-4 py-2 font-base font-bold">
               ХООЛНЫ ЦЭС
             </button>
