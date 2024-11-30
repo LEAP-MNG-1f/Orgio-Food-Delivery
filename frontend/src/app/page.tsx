@@ -24,7 +24,7 @@ export default function Home() {
     <main>
       <Hero />
       <SaleMeals />
-      <Page/>
+      {/* <Page/> */}
     </main>
   );
 }
