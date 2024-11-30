@@ -13,15 +13,15 @@ export const Header = () => {
         <div className="w-full h-auto flex justify-start items-center gap-8 py-2">
           <PineconeLogoBlack />
           <div className="flex gap-2">
-            <Link href={"/"} className="px-4 py-2 font-base font-bold">
+            <Link href={"/"} className="px-4 py-2 font-base font-bold hover:text-[#18BA51] active:text-[#18BA51]">
               НҮҮР
             </Link>
-            <button className="px-4 py-2 font-base font-bold">
+            <Link href={"/food-menu"} className="px-4 py-2 font-base font-bold hover:text-[#18BA51] active:text-[#18BA51]">
               ХООЛНЫ ЦЭС
-            </button>
-            <button className="px-4 py-2 font-base font-bold">
+            </Link>
+            <Link href={"/delivery-area"} className="px-4 py-2 font-base font-bold hover:text-[#18BA51] active:text-[#18BA51]">
               ХҮРГЭЛТИЙН БҮС
-            </button>
+            </Link>
           </div>
         </div>
         <div className="flex justify-end items-center w-full h-auto gap-2 py-2">
@@ -35,9 +35,9 @@ export const Header = () => {
           </div>
           <div className="flex w-auto h-auto justify-center items-center gap-2 px-4 py-2">
             <BasketIcon />
-            <button className="text-black text-sm font-bold">Сагс</button>
+            {/* <AnchorTemporaryDrawer/> */}
           </div>
-          <div className="flex w-auto h-auto justify-center items-center gap-2 px-4 py-2">
+          <div className="flex w-auto h-auto justify-center items-center gap-2 px-4 py-2 group-hover:bg-[#18BA51]">
             <LoginIcon />
             <button className="text-black text-sm font-bold">Нэвтрэх</button>
           </div>

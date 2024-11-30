@@ -26,9 +26,9 @@ export const Footer = () => {
           <button className="text-white font-semibold underline decoration-solid">
             Холбоо барих
           </button>
-          <button className="text-white font-semibold underline decoration-solid">
+          <Link href={"/food-menu"} className="text-white font-semibold underline decoration-solid">
             Хоолны цэс
-          </button>
+          </Link>
           <Link
             href={"/terms-of-sevice"}
             className="text-white font-semibold underline decoration-solid"

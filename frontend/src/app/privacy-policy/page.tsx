@@ -3,7 +3,7 @@ import { Star } from "../../../public/Icons/Icons";
 const Page = () => {
   return (
     <div className="w-full h-auto justify-center items-center bg-white">
-      <div className="container max-w-[1440px] h-auto m-auto py-[32px] px-[120px]">
+      <div className="container max-w-[1440px] h-auto m-auto py-[55px] px-[120px]">
         <div className="w-full h-auto flex justify-start items-center py-4">
           <Star />
           <div className="text-[#272727] text-[22px] font-bold">
