@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import Hero from "./_components/hero/Page";
 import SaleMeals from "./_components/salemeals/SaleMeals";
-import AnchorTemporaryDrawer from "./_components/basket/Basket";
+
 
 export default function Home() {
   const fetchData = async () => {
@@ -23,7 +23,6 @@ export default function Home() {
     <main>
       <Hero />
       <SaleMeals />
-      {/* <AnchorTemporaryDrawer/> */}
     </main>
   );
 }

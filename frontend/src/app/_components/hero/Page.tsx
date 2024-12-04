@@ -8,13 +8,11 @@ const Hero = () => {
       }}"
     >
       <div className="container max-w-[1440px] h-[788px] m-auto flex justify-start items-center px-[120px]">
-        <div className="flex">
-          <div className="w-[384px] h-auto flex flex-col justify-start gap-[23px]">
+        <div className="w-full flex justify-between items-center">
+          <div className="w-[384px] h-auto flex flex-col justify-center items-center  gap-[23px]">
             <div className="w-full flex flex-col">
               <div className="w-full h-auto text-white text-[55px] font-semibold text-wrap">
-                Pinecone
-              </div>
-              <div className="w-full h-auto text-white text-[55px] font-semibold text-wrap">
+                Pinecone <br />
                 Food delivery
               </div>
             </div>
@@ -23,23 +21,8 @@ const Hero = () => {
               Хүссэн хоолоо захиалаад идээрэй.
             </div>
           </div>
-          <div className="flex justify-between items-center">
-            <div
-              style={{
-                backgroundImage: `url(${"./Icons/image13.svg"})`,
-                width: "443px",
-                height: "438px",
-              }}
-              className="absolute right-[670px] bottom-[500px]"
-            ></div>
-            <div
-              style={{
-                backgroundImage: `url(${"./Icons/image14.svg"})`,
-                width: "313px",
-                height: "313px",
-              }}
-              className="absolute right-[520px] bottom-[520px]"
-            ></div>
+          <div className="w-[588px] h-[438px] flex justify-between items-center">
+            <img src="./Group534.png" alt="" />
           </div>
         </div>
       </div>
